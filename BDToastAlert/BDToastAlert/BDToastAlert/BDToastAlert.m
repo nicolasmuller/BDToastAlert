@@ -163,7 +163,7 @@
     }else if(self.verticalAlignment == BDToastVerticalAlignmentTop){
         toastView.center = CGPointMake(centerOfView.x, kMargin);
     }else {
-        toastView.center = CGPointMake(centerOfView.x - (CGRectGetWidth(toastView.bounds) / 2), CGRectGetHeight(viewToShowOn.bounds) - CGRectGetHeight(toastView.bounds) - (_isKeyboardShowing?kHeightKeyboard:0));
+        toastView.center = CGPointMake(centerOfView.x, CGRectGetHeight(viewToShowOn.bounds) - CGRectGetHeight(toastView.bounds) - (_isKeyboardShowing?kHeightKeyboard:0));
     }
 
     toastView.frame = CGRectIntegral(toastView.frame);
